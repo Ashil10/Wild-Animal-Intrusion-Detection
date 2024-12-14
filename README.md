@@ -22,7 +22,6 @@ This folder contains MATLAB code for enhancing base sounds (bee and vervet monke
 ---
 
 ### 2. **Python Code**
-- **File**: `raspberry_pi_sound_player.py`
 - **Purpose**: Plays sound frequencies on a Raspberry Pi device when an animal intrusion is detected.
 - **Features**:
   - Reads pre-configured sound files from local storage.
