@@ -1,4 +1,4 @@
-# Wildlife Intrusion Repellent System
+# Wild Animal Intrusion Repellent System
 
 This repository contains all the necessary components for developing and deploying the Wildlife Intrusion Repellent System, aimed at deterring elephants, tigers, and other wild animals using specified frequencies and natural deterrent sounds.
 
