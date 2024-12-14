@@ -11,15 +11,13 @@ The project is organized into the following folders and files:
 ### 1. **MATLAB Code**
 This folder contains MATLAB code for enhancing base sounds (bee and vervet monkey) to specified frequencies to effectively repel target animals.
 
-#### a) `MATLAB Elephant Repellent/`
+#### a) 'MATLAB Elephant Repellent'
 - **Purpose**: Repels elephants using a bee sound as the base.
-- **Contents**:
-  - `bee_sound_enhancement.m`: Enhances the bee sound to specified frequencies suitable for repelling elephants.
+- Enhances the bee sound to specified frequencies suitable for repelling elephants.
 
-#### b) `tiger/`
+#### b) `MATLAB Tiger Repellent`
 - **Purpose**: Repels tigers using vervet monkey sound as the base.
-- **Contents**:
-  - `vervet_sound_enhancement.m`: Enhances the vervet monkey sound to specified frequencies suitable for repelling tigers.
+- Enhances the vervet monkey sound to specified frequencies suitable for repelling tigers.
 
 ---
 
