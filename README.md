@@ -107,7 +107,6 @@ This folder contains MATLAB code for enhancing base sounds (bee and vervet monke
 
 ## Future Enhancements
 - Add support for more species using additional sound patterns.
-- Implement advanced AI-based detection and classification.
 - Extend the app’s functionality to allow remote configuration of repellent settings.
 
 
