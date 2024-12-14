@@ -1,7 +1,7 @@
 ### Wild Animal Intrusion Repellent System
 
 
-##Introduction
+## Introduction
 
 This project, titled Wild Animal Intrusion Detection and Repellent System, was developed as part of our final year B.Tech project in Computer Science and Engineering in collaboration with IIIT Kottayam. The system was designed by myself and Parvathy Gopan to address the issue of wild animal intrusion, particularly targeting elephants and tigers. We implemented a repellent mechanism that utilizes animal detection through Mask RCNN. Upon detection, the system triggers the repellent, which is emitted via an amplifier and an ultrasonic transducer, all controlled by a central Raspberry Pi B4. In parallel, a React Native application was developed to provide real-time alerts about animal detections. The project team consisted of Ramkrishna K, Joel Sebastian, Abin JS, Harsha Anand, Lekha, Parvathy Gopan, and myself.
 
