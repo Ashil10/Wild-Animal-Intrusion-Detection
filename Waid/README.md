@@ -80,7 +80,7 @@ The app integrates with **Firebase Firestore** and **Firebase Authentication** f
 
 To keep the repository clean and secure:  
 - **Build Files**:
-  - The `android/app/` folder is excluded as the app is being developed for Android only.  
+  - The `android/app/build` folder is excluded as it will be updated based on the other codes and is there by default.  
   - The `ios/` folder is not included since the app is not yet implemented for iOS.  
 
 - **Node Modules**:  
