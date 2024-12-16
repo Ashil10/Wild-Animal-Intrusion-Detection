@@ -1,79 +1,109 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+Wild Animal Intrusion Detection App
 
-# Getting Started
+This repository contains the Wild Animal Intrusion Detection App, a React Native application designed to provide real-time alerts and historical logs of detected wild animals, specifically elephants and tigers, identified using a thermal camera and processed with Mask R-CNN on a Raspberry Pi.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+The app integrates with Firebase Firestore and Firebase Authentication for user login and data management. Upon successful login (via Gmail), users can view real-time alerts and logs of previous detections.
 
-## Step 1: Start the Metro Server
+Features
+	•	Firebase Authentication: Users can log in via Gmail to access the app.
+	•	Real-Time Alerts: Alerts are triggered when an animal is detected by the Raspberry Pi system.
+	•	Firestore Integration: Logs of previous detections, including timestamps and animal species, are stored and retrieved.
+	•	Mask R-CNN Integration: Thermal camera data is processed by a Mask R-CNN model to detect animals.
+	•	Repellent System: Upon detection of an animal, a frequency is emitted to repel elephants and tigers.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+Technologies Used
+	1.	Frontend:
+	•	React Native with TypeScript
+	•	Firebase Authentication for login via Gmail
+	•	Firebase Firestore for storing and retrieving detection logs
+	2.	Backend Integration:
+	•	Raspberry Pi using Mask R-CNN to detect elephants and tigers.
+	•	Data pushed to Firestore via the Raspberry Pi upon detection.
+	3.	Real-Time Communication:
+	•	Firebase Cloud Messaging (FCM) for real-time notifications.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+Installation and Setup
 
-```bash
-# using npm
-npm start
+Prerequisites
+	•	Node.js and npm installed
+	•	Android Studio for Android app development
+	•	Firebase Project set up with Authentication and Firestore enabled
 
-# OR using Yarn
-yarn start
-```
+Steps to Set Up
+	1.	Clone the Repository:
 
-## Step 2: Start your Application
+git clone https://github.com/Ashil10/Wild-Animal-Intrusion-Detection.git
+cd Wild-Animal-Intrusion-Detection
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-### For Android
+	2.	Install Dependencies:
 
-```bash
-# using npm
-npm run android
+npm install
 
-# OR using Yarn
-yarn android
-```
 
-### For iOS
+	3.	Set Up Firebase Configuration:
+	•	Add your Firebase project configuration in a .env file based on the provided .env.example.
+	•	Example .env file:
 
-```bash
-# using npm
-npm run ios
+REACT_APP_API_KEY=your_api_key
+REACT_APP_AUTH_DOMAIN=your_auth_domain
+REACT_APP_PROJECT_ID=your_project_id
+REACT_APP_STORAGE_BUCKET=your_storage_bucket
+REACT_APP_MESSAGING_SENDER_ID=your_messaging_sender_id
+REACT_APP_APP_ID=your_app_id
 
-# OR using Yarn
-yarn ios
-```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+	4.	Run the App:
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+npx react-native run-android
 
-## Step 3: Modifying your App
+How It Works
+	1.	Animal Detection:
+	•	The Raspberry Pi uses a thermal camera and the Mask R-CNN model to identify elephants and tigers.
+	•	Upon detection, it sends the species and timestamp data to Firebase Firestore.
+	2.	Real-Time Alerts:
+	•	The React Native app fetches this data and displays it on the Alerts screen.
+	•	Notifications are sent to the user’s device via Firebase Cloud Messaging.
+	3.	User Authentication:
+	•	Users log in via Gmail using Firebase Authentication.
+	4.	Historical Logs:
+	•	The app provides a history of all detections stored in Firestore, accessible on the Logs screen.
 
-Now that you have successfully run the app, let's modify it.
+Excluded Files and Folders
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+To keep the repository clean and secure:
+	•	Build Files:
+	•	The android/app/ folder is excluded as the app is being developed for Android only.
+	•	The ios/ folder is not included since the app is not yet implemented for iOS.
+	•	Node Modules:
+	•	The node_modules/ folder is excluded as it contains installed dependencies. Use npm install to generate it.
+	•	Vendor Folder:
+	•	Third-party dependencies or prebuilt libraries (if any) are excluded.
+	•	API Keys:
+	•	All sensitive information like API keys has been removed. Use a .env file for configuration.
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+Screens and Functionality
+	1.	Login Screen
+	•	Allows users to log in with Gmail credentials via Firebase Authentication.
+	2.	Alerts Screen
+	•	Displays real-time notifications of detected animals.
+	3.	Logs Screen
+	•	Provides a history of all detected animals, including timestamps.
 
-## Congratulations! :tada:
+Future Improvements
+	•	Adding support for iOS.
+	•	Enhancing the user interface with more intuitive designs.
+	•	Expanding repellent mechanisms to include other species.
+	•	Incorporating offline data caching.
 
-You've successfully run and modified your React Native App. :partying_face:
+License
 
-### Now what?
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+Contributing
 
-# Troubleshooting
+Feel free to fork the repository and submit a pull request to contribute to the project.
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+Acknowledgments
 
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Special thanks to the Mask R-CNN model, the Raspberry Pi community, and Firebase for their support in making this project possible.
