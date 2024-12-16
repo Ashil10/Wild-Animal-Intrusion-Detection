@@ -33,7 +33,7 @@ This folder contains MATLAB code for enhancing base sounds (bee and vervet monke
 
 ---
 
-### 3. **Frontend App Code**
+### 3. **Waid --- Frontend App Code**
 - **Framework**: React Native
 - **Features**:
   - **Authentication**: Uses Firebase Authentication for user login and registration.
