@@ -33,6 +33,7 @@ Steps to Set Up
 	1.	Clone the Repository:
 
 git clone https://github.com/Ashil10/Wild-Animal-Intrusion-Detection.git
+
 cd Wild-Animal-Intrusion-Detection
 
 
@@ -42,15 +43,7 @@ npm install
 
 
 	3.	Set Up Firebase Configuration:
-	•	Add your Firebase project configuration in a .env file based on the provided .env.example.
-	•	Example .env file:
-
-REACT_APP_API_KEY=your_api_key
-REACT_APP_AUTH_DOMAIN=your_auth_domain
-REACT_APP_PROJECT_ID=your_project_id
-REACT_APP_STORAGE_BUCKET=your_storage_bucket
-REACT_APP_MESSAGING_SENDER_ID=your_messaging_sender_id
-REACT_APP_APP_ID=your_app_id
+	•	Add your Firebase project configurations
 
 
 	4.	Run the App:
