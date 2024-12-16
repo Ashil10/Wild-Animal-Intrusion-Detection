@@ -5,12 +5,12 @@ import messaging from '@react-native-firebase/messaging';
 
 // Firebase configuration object
 const firebaseConfig = {
-    apiKey: 'AIzaSyCt9C-_xCOFaoXCbcB4L15iH5Z7ZAvescI',
+    apiKey: 'your api key',
     authDomain: 'waid-3c1f7.firebaseapp.com',
     projectId: 'waid-3c1f7',
     storageBucket: 'waid-3c1f7.appspot.com',
-    messagingSenderId: '881708195258',
-    appId: '1:881708195258:android:d7b9f600d045d463869183',
+    messagingSenderId: 'senderid',
+    appId: 'appid',
 };
 
 // Initialize Firebase App
