@@ -1,4 +1,4 @@
-Wild Animal Intrusion Detection App
+#Wild Animal Intrusion Detection App
 
 This repository contains the Wild Animal Intrusion Detection App, a React Native application designed to provide real-time alerts and historical logs of detected wild animals, specifically elephants and tigers, identified using a thermal camera and processed with Mask R-CNN on a Raspberry Pi.
 
