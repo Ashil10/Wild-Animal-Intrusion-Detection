@@ -1,8 +1,8 @@
 # **Wild Animal Intrusion Detection App**
 <div style="text-align: center;">
-    <img src="https://github.com/user-attachments/assets/023c1778-2dcd-47bc-8f14-4af26f3c83a2" alt="Image 4" style="width: 300px; height: 300px; object-fit: cover; display: inline-block;"/>
-    <img src="https://github.com/user-attachments/assets/393b43be-17f9-4874-9768-871038c36b7d" alt="Image 3" style="width: 300px; height: 300px; object-fit: cover; display: inline-block;"/>
-    <img src="https://github.com/user-attachments/assets/b3588a2a-f13b-4993-8963-90d3460791aa" alt="Image 2" style="width: 300px; height: 300px; object-fit: cover; display: inline-block;"/>
+    <img src="https://github.com/user-attachments/assets/023c1778-2dcd-47bc-8f14-4af26f3c83a2" alt="Image 4" style="width: 300px; height: 300px; object-fit: cover; display: block; margin-bottom: 20px;"/>
+    <img src="https://github.com/user-attachments/assets/393b43be-17f9-4874-9768-871038c36b7d" alt="Image 3" style="width: 300px; height: 300px; object-fit: cover; display: block; margin-bottom: 20px;"/>
+    <img src="https://github.com/user-attachments/assets/b3588a2a-f13b-4993-8963-90d3460791aa" alt="Image 2" style="width: 300px; height: 300px; object-fit: cover; display: block; margin-bottom: 20px;"/>
 </div>
 This repository contains the **Wild Animal Intrusion Detection App**, a **React Native** application designed to provide **real-time alerts** and **historical logs** of detected wild animals, specifically **elephants** and **tigers**, identified using a thermal camera and processed with **Mask R-CNN** on a Raspberry Pi.
 
