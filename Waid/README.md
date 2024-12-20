@@ -1,9 +1,10 @@
 # **Wild Animal Intrusion Detection App**
-
-<img src="https://github.com/user-attachments/assets/af4ee141-0cb9-460b-9409-3db409e763eb" alt="Image Description" width="500"/>
-<img src="https://github.com/user-attachments/assets/b3588a2a-f13b-4993-8963-90d3460791aa" alt="Image Description" width="500"/>
-<img src="https://github.com/user-attachments/assets/393b43be-17f9-4874-9768-871038c36b7d" alt="Image Description" width="500"/>
-<img src="https://github.com/user-attachments/assets/023c1778-2dcd-47bc-8f14-4af26f3c83a2" alt="Image Description" width="500"/>
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://github.com/user-attachments/assets/023c1778-2dcd-47bc-8f14-4af26f3c83a2" alt="Image 4" style="width: 200px; height: 150px; object-fit: cover;"/>
+    <img src="https://github.com/user-attachments/assets/393b43be-17f9-4874-9768-871038c36b7d" alt="Image 3" style="width: 200px; height: 150px; object-fit: cover;"/>
+    <img src="https://github.com/user-attachments/assets/b3588a2a-f13b-4993-8963-90d3460791aa" alt="Image 2" style="width: 200px; height: 150px; object-fit: cover;"/>
+    <img src="https://github.com/user-attachments/assets/af4ee141-0cb9-460b-9409-3db409e763eb" alt="Image 1" style="width: 200px; height: 150px; object-fit: cover;"/>
+</div>
 This repository contains the **Wild Animal Intrusion Detection App**, a **React Native** application designed to provide **real-time alerts** and **historical logs** of detected wild animals, specifically **elephants** and **tigers**, identified using a thermal camera and processed with **Mask R-CNN** on a Raspberry Pi.
 
 The app integrates with **Firebase Firestore** and **Firebase Authentication** for user login and data management. Upon successful login (via Gmail), users can view **real-time alerts** and **logs of previous detections**.
